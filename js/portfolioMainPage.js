@@ -50,7 +50,7 @@ app.init = function(){
     wireframe: false,
     opacity     : 0.5,
     transparent : true,
-    map: THREE.ImageUtils.loadTexture("/images/frontend.jpg")
+    map: THREE.ImageUtils.loadTexture("/images/FE.png")
   });
 
   var sphereMaterialBackEnd = new THREE.MeshLambertMaterial( {
@@ -58,7 +58,7 @@ app.init = function(){
     wireframe: false,
     opacity     : 0.5,
     transparent : true,
-    map: THREE.ImageUtils.loadTexture("/images/BEnd.png")
+    map: THREE.ImageUtils.loadTexture("/images/BE.png")
   });
 
   var sphereMaterialCssStyle = new THREE.MeshLambertMaterial( {
@@ -66,7 +66,7 @@ app.init = function(){
     wireframe: false,
     opacity     : 0.5,
     transparent : true,
-    map: THREE.ImageUtils.loadTexture("/images/styles.png")
+    map: THREE.ImageUtils.loadTexture("/images/css.jpg")
   });
 
   var sphereMaterialMe = new THREE.MeshLambertMaterial( {
