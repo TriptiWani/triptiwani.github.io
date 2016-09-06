@@ -155,9 +155,7 @@ app.animate = function(){
   app.sphereBackEnd.rotation.y += app.controller.rotationSpeed;
   app.sphereCss.rotation.y += app.controller.rotationSpeed;
   app.sphereMe.rotation.y += app.controller.rotationSpeed;
-  // app.cube.rotation.x += app.controller.rotationSpeed;
-  // app.cube.rotation.y += app.controller.rotationSpeed;
-  // app.cube.rotation.z += app.controller.rotationSpeed;
+
 
   app.renderer.render( app.scene, app.camera);
   requestAnimationFrame(app.animate);
