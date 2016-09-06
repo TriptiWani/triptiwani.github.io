@@ -89,7 +89,7 @@ h3{
 }
 .projects_container{
   background-image: url(../images/background4.jpg);
-  min-height: 100%;
+  /*min-height: 100%;*/
 }
 .contactme {
   background-image: url(../images/background2.jpeg);
@@ -99,12 +99,12 @@ h3{
   background-size: cover;
 }
 .works{
-  background-image: url(../images/colorful.png);
+  background-image: url(../images/background3.jpg);
   text-align: center;
   background-size: cover;
   min-height: 100%;
-  padding-top: 20%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  /*padding-bottom: 5%;*/
 }
 .movingfeather  {
   text-align: center;
@@ -140,14 +140,18 @@ h3{
 .caption {
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 10%;
+  margin-bottom:10%;
   width: 100%;
   text-align: center;
   color: #000;
 }
+#output{
+  padding-top:10%;
+}
 .project1,.project2,.project3,.project4,.project5,.project6{
-  min-height: 100vh;
-  height:100%;
+  min-height: 60vh;
+  /*height:100%;*/
 }
 section{
   text-align:center;
@@ -165,7 +169,7 @@ section{
 .creative {
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 5%;
   width: 100%;
   text-align: center;
   color: #000;
