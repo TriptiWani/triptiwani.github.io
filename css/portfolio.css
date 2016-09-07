@@ -82,9 +82,10 @@ h3{
   background-color:white;
   text-align:center;
   padding:50px 80px;
+  /*width:50%;*/
 }
 .home{
-  background-image: url(../images/background1.jpg);
+  /*background-image: url(../images/background1.jpg);*/
   min-height: 100%;
 }
 .projects_container{
@@ -148,10 +149,13 @@ h3{
 }
 #output{
   padding-top:10%;
+  opacity:1;
 }
 .project1,.project2,.project3,.project4,.project5,.project6{
-  min-height: 60vh;
-  /*height:100%;*/
+  /*min-height: 60vh;*/
+  display:inline-block;
+  /*width: 350px;
+  height:350px;*/
 }
 section{
   text-align:center;
@@ -298,4 +302,72 @@ form{
 }
 .emailIcon{
   width:5%;
+}
+
+
+
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	/*.flip-container:hover .flipper, .flip-container.hover .flipper, .project1:hover,.aboutmeImage:hover {
+		transform: rotateY(180deg);
+	}*/
+
+.flip-container, .front, .back {
+	/*width: 100%;*/
+  width:325px;
+	height: 325px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  /*padding-top: 50px;*/
+}
+
+.back p {
+  color: rgba(115, 130, 144, 1);
+  font-size: 20px;
+}
+.back a{
+  color: rgba(115, 130, 144, 1);
+}
+.back li{
+  color: color: rgba(115, 130, 144, 1);
+  font-size: 16px;
+  text-align: left;
+}
+.palate{
+  background-image: url("https://static.pexels.com/photos/3329/food-kitchen-cutting-board-cooking.jpg");
+  background-size: cover;
+}
+
+.trace{
+  background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/09/10/2D39AA9500000578-0-image-a-3_1444382448583.jpg");
+  background-size: cover;
 }

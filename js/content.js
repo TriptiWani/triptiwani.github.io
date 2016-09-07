@@ -1,3 +1,4 @@
+var num_of_projects = 6;
 //creative works
 var creativeWorks = [
   {'img':'images/lantern.jpg',
@@ -45,11 +46,11 @@ var projectDetails = [
   {'projectTitle':'TicTacToe',
     'projectLinkCode':'https://github.com/TriptiWani/project0',
     'projectLinkDemo':'https://triptiwani.github.io/Games/TicTacToe/tictactoe.html',
-    'projectDescription':'This is the start of my journey in this world. TicTacToe with a mood flavor- either choose your avtars based on your mood or the default colors will be selected. Two modes: - Player(Human) v/s Computer , and Player 1 (Human) v/s Player 2 (Human)',
+    'projectDescription':'TicTacToe with a mood flavor- either choose your avtars based on your mood or the default colors will be selected. Two modes: - Player(Human) v/s Computer , and Player 1 (Human) v/s Player 2 (Human)',
     'projectStack':'HTML,CSS,Javascript,jQuery',
     'projectCredentials':'',
-    'projectImage1':'laptop.png',
-    'projectImage2':'laptop2.png'
+    'projectImage1':'ttt1.png',
+    'projectImage2':'ttt2.png'
   },
   {'projectTitle':'Inventory Management',
     'projectLinkCode':'https://github.com/TriptiWani/project1',
@@ -57,40 +58,40 @@ var projectDetails = [
     'projectDescription':'This is an e-commerce website to procure, track and deal in Mobile handsets and accessories for wholesalers and retailers across multiple locations with the built-in payment feature. Users can login via email, facebook, twitter',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Rails, Cloudinary, SendGrid, Heroku, Stripe,Money-rails',
     'projectCredentials':'tripti.895@gmail.com/chicken',
-    'projectImage1':'laptop.png',
-    'projectImage2':'laptop2.png'},
+    'projectImage1':'IM1.png',
+    'projectImage2':'IM2.png'},
   {'projectTitle':'Palate',
     'projectLinkCode':'https://github.com/pkganti/project2',
     'projectLinkDemo':'https://wdi15project2.herokuapp.com',
     'projectDescription':'This is a mobile-first application for creating, bookmarking and sharing recipes- either via self or any existing recipe websites via chrome extension. This application fully supports 4 websites - Taste.com,BBCfood, Allrecipes,Foodnetwork and partially supports all the websites.',
     'projectStack':'Ruby, Rails 4.2.6, jQuery, CSS, HTML 5, Javascript, Nokogiri, Chrome dev tools extension for bookmarking, Heroku, Cloudinary, Disqus, bcrypt, RESTful APIs',
     'projectCredentials':'tripti.895@gmail.com/chicken',
-    'projectImage1':'mobile.png',
-    'projectImage2':'mobile2.png'},
+    'projectImage1':'Palate1.png',
+    'projectImage2':'Palate2.png'},
   {'projectTitle':'Talk2Me',
     'projectLinkCode':'https://github.com/TriptiWani/Talk2Me',
     'projectLinkDemo':'https://talk2meapp.herokuapp.com/',
     'projectDescription':'User friendly web-based chat application where in a user can share text, photos, gifs and location with the other contacts in the group.This application also comes with a Mobile-first approach.',
     'projectStack':'HTML, JavaScript, CSS, jQuery, Ruby 2.2.4, Rails 5, Cloudinary, BootStrap, bcrypt,httparty, Heroku, Gifshot.js, GoogleMaps.js,jQueryAutoComplete.js',
     'projectCredentials':'Tripti/chicken',
-    'projectImage1':'mobile.png',
-    'projectImage2':'mobile2.png'},
+    'projectImage1':'Talk2Me1.png',
+    'projectImage2':'Talk2Me2.png'},
   {'projectTitle':'HangMan',
-    'projectLinkCode':'https://github.com/TriptiWani/WDI15_Homework/tree/master/tripti_agarwal/week_10/Thursday_hangman',
-    'projectLinkDemo':'check the link-deploy to gh-pages',
+    'projectLinkCode':'https://github.com/TriptiWani/HangMan',
+    'projectLinkDemo':'https://triptiwani.github.io/MTA/MTA3/index.html',
     'projectDescription':'This is >-O !!HANGMAN!! O-< . You have 8 lives to guess the word, else you loose. It keeps a track of all the letters gueesed, so that you dont guess the same letter again.' ,
     'projectStack':'HTML,CSS,Javascript,jQuery,Underscore.js',
     'projectCredentials':'',
-    'projectImage1':'Tablet.png',
-    'projectImage2':'Tablet1.png'},
+    'projectImage1':'HangMan2.png',
+    'projectImage2':'HangMan2.png'},
   {'projectTitle':'MTA- The Travel Planner',
-    'projectLinkCode':'https://github.com/TriptiWani/WDI15_Homework/tree/master/tripti_agarwal/week_10/Thursday_hangman',
-    'projectLinkDemo':'check the link-deploy to gh-pages',
+    'projectLinkCode':'https://github.com/TriptiWani/MTA',
+    'projectLinkDemo':'https://triptiwani.github.io/HangMan/index.html',
     'projectDescription':'This models a simple subway system.It takes the line and stop that a user is getting on at and the line and stop that user is getting off at and prints the journey and the total number of stops for the trip. You can enjoy this in all the flavors of code - Javascript, Ruby, Underscore',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Underscore.js',
     'projectCredentials':'',
-    'projectImage1':'Tablet.png',
-    'projectImage2':'Tablet1.png'},
+    'projectImage1':'MTA1.png',
+    'projectImage2':'MTA2.png'},
 ];
 
 //skillsImages
@@ -267,22 +268,8 @@ var skillsImages =
   $pFour.append($divLearningSkills);
   $divAboutMeContainer.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($pFour);
 
-  var showText = function($el){
-    $('.laptopDisplay').remove();
-    $div = $('<div></div>');
-    $div.text('It starts hereeeeee...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
-    $el.append($div);
-    $div.addClass('textDisplay');
-  } ;
-  var showImage = function($el,imageName){
-    // $('.textDisplay').remove();
-    // $img = $('.laptopDisplay');
-    // console.log($img);
-    $el.attr('src',"images/"+imageName);
-    // $img.addClass('laptopDisplay');
-    // $el.append($img);
-  };
-  var num_of_projects = 6;
+
+
   var returnMessage = function(message,id) {
     $(id).typed({
         strings: [message],

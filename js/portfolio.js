@@ -4,14 +4,14 @@ $(document).ready(function(){
     console.log('clicked');
   });
 
-  $('.laptopDisplay').mouseleave(function(){
-    console.log('leave');
-    showImage($(this),"laptop.png");
-  });
-  $('.laptopDisplay').mouseenter(function(){
-    console.log('enter');
-    showImage($(this),"laptop2.png");
-  });
+  // $('.laptopDisplay').mouseleave(function(){
+  //   console.log('leave');
+  //   showImage($(this),"laptop.png");
+  // });
+  // $('.laptopDisplay').mouseenter(function(){
+  //   console.log('enter');
+  //   showImage($(this),"laptop2.png");
+  // });
   $('.aboutme').append($divImg).append($divAboutMeContainer);
 
     projectViews($('.projects_container'),1,'laptop');

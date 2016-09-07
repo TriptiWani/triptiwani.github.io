@@ -63,6 +63,7 @@ app.init = function(){
     opacity     : 1,
     transparent : true,
     map: THREE.ImageUtils.loadTexture("/images/Me1.png")
+
   });
 
   var sphereMaterialCssStyle = new THREE.MeshLambertMaterial( {
