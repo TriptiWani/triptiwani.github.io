@@ -78,7 +78,7 @@ var projectDetails = [
     'projectImage2':'Talk2Me2.png'},
   {'projectTitle':'HangMan',
     'projectLinkCode':'https://github.com/TriptiWani/HangMan',
-    'projectLinkDemo':'https://triptiwani.github.io/MTA/MTA3/index.html',
+    'projectLinkDemo':'https://triptiwani.github.io/HangMan/index.html',
     'projectDescription':'This is >-O !!HANGMAN!! O-< . You have 8 lives to guess the word, else you loose. It keeps a track of all the letters gueesed, so that you dont guess the same letter again.' ,
     'projectStack':'HTML,CSS,Javascript,jQuery,Underscore.js',
     'projectCredentials':'',
@@ -86,7 +86,7 @@ var projectDetails = [
     'projectImage2':'HangMan2.png'},
   {'projectTitle':'MTA- The Travel Planner',
     'projectLinkCode':'https://github.com/TriptiWani/MTA',
-    'projectLinkDemo':'https://triptiwani.github.io/HangMan/index.html',
+    'projectLinkDemo':'https://triptiwani.github.io/MTA/MTA3/index.html',
     'projectDescription':'This models a simple subway system.It takes the line and stop that a user is getting on at and the line and stop that user is getting off at and prints the journey and the total number of stops for the trip. You can enjoy this in all the flavors of code - Javascript, Ruby, Underscore',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Underscore.js',
     'projectCredentials':'',
@@ -212,7 +212,7 @@ var skillsImages =
   $pOne = $('<p></p>');
   $pOne.html(aboutmeText1);
 
-  var aboutmeText2 = "I am a happy-go-crazy person who likes coding day-in day-out, the weirdest being coding-in-dreams. I am passionate about creating interactive, responsive and user-friendly websites and applications";
+  var aboutmeText2 = "Focused and self-motivated professional, with an experience of 7 years in Information Technology, I love to solve problems with code while applying industry best practices in a collaborative environment. I am a happy-go-lucky person who likes coding day-in day-out, to the point where I even code in my dreams!  I am passionate about creating interactive, responsive and user-friendly websites and applications";
   $pTwo = $('<p></p>');
   $pTwo.html(aboutmeText2);
 
@@ -221,6 +221,15 @@ var skillsImages =
 
 
   var aboutmeText5 = "Apart from this, I have a keen interest in Painting/Crafting. Have a look ";
+
+  var VCSkills = "Version Control: GIT,CLEARCASE,VSS";
+  var SchSkills = "Scheduler: Control-M";
+
+  $pVCSkills = $('<p></p>');
+  $pVCSkills.html(VCSkills);
+
+  $pSchSkills = $('<p></p>');
+  $pSchSkills.html(SchSkills);
 
   var $aCreative = $('<a/>');
   $aCreative.attr('href','#interests');
@@ -266,7 +275,7 @@ var skillsImages =
     $divLearningSkills.append(displaySkills(i));
   });
   $pFour.append($divLearningSkills);
-  $divAboutMeContainer.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($pFour);
+  $divAboutMeContainer.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($pSchSkills).append($pVCSkills).append($pFour);
 
 
 
