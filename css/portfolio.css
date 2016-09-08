@@ -242,6 +242,9 @@ h3 {
   text-align:center;
   font-size: 50px;
 }
+.controlToTop i{
+  color: #0dadf0;
+}
 /*.projectLeft {
   width:60%;
 }
