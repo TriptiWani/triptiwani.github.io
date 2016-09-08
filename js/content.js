@@ -55,7 +55,7 @@ var projectDetails = [
   {'projectTitle':'Inventory Management',
     'projectLinkCode':'https://github.com/TriptiWani/project1',
     'projectLinkDemo':'https://store-inventory-management.herokuapp.com',
-    'projectDescription':'This is an e-commerce website to procure, track and deal in Mobile handsets and accessories for wholesalers and retailers across multiple locations with the built-in payment feature. Users can login via email, facebook, twitter',
+    'projectDescription':'This is an e-commerce website to procure, track and deal in Mobile handsets and accessories for wholesalers and retailers across multiple locations with the built-in payment feature',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Rails, Cloudinary, SendGrid, Heroku, Stripe,Money-rails',
     'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'IM1.png',
@@ -64,7 +64,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/pkganti/project2',
     'projectLinkDemo':'https://wdi15project2.herokuapp.com',
     'projectDescription':'This is a mobile-first application for creating, bookmarking and sharing recipes- either via self or any existing recipe websites via chrome extension. This application fully supports 4 websites - Taste.com,BBCfood, Allrecipes,Foodnetwork and partially supports all the websites.',
-    'projectStack':'Ruby, Rails 4.2.6, jQuery, CSS, HTML 5, Javascript, Nokogiri, Chrome dev tools extension for bookmarking, Heroku, Cloudinary, Disqus, bcrypt, RESTful APIs',
+    'projectStack':'Ruby, Rails 4.2.6, jQuery, CSS, HTML 5, Javascript, Nokogiri, Chrome dev tools extension for bookmarking, Heroku, Cloudinary, Disqus, RESTful APIs',
     'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'Palate1.png',
     'projectImage2':'Palate2.png'},
@@ -72,7 +72,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/TriptiWani/Talk2Me',
     'projectLinkDemo':'https://talk2meapp.herokuapp.com/',
     'projectDescription':'User friendly web-based chat application where in a user can share text, photos, gifs and location with the other contacts in the group.This application also comes with a Mobile-first approach.',
-    'projectStack':'HTML, JavaScript, CSS, jQuery, Ruby 2.2.4, Rails 5, Cloudinary, BootStrap, bcrypt,httparty, Heroku, Gifshot.js, GoogleMaps.js,jQueryAutoComplete.js',
+    'projectStack':'HTML, JavaScript, CSS, jQuery, Ruby 2.2.4, Rails 5, Cloudinary, BootStrap, Heroku, Gifshot.js, GoogleMaps,jQueryAutoComplete.js',
     'projectCredentials':'Tripti/chicken',
     'projectImage1':'Talk2Me1.png',
     'projectImage2':'Talk2Me2.png'},
@@ -82,12 +82,12 @@ var projectDetails = [
     'projectDescription':'This is >-O !!HANGMAN!! O-< . You have 8 lives to guess the word, else you loose. It keeps a track of all the letters gueesed, so that you dont guess the same letter again.' ,
     'projectStack':'HTML,CSS,Javascript,jQuery,Underscore.js',
     'projectCredentials':'',
-    'projectImage1':'HangMan2.png',
+    'projectImage1':'HangMan1.png',
     'projectImage2':'HangMan2.png'},
   {'projectTitle':'MTA- The Travel Planner',
     'projectLinkCode':'https://github.com/TriptiWani/MTA',
     'projectLinkDemo':'https://triptiwani.github.io/MTA/MTA3/index.html',
-    'projectDescription':'This models a simple subway system.It takes the line and stop that a user is getting on at and the line and stop that user is getting off at and prints the journey and the total number of stops for the trip. You can enjoy this in all the flavors of code - Javascript, Ruby, Underscore',
+    'projectDescription':'This models a simple subway system.It takes the line and stop that a user is getting on at and  getting off at and prints the journey and the total number of stops for the trip. Enjoy this in all the flavors of code - Javascript, Ruby, Underscore',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Underscore.js',
     'projectCredentials':'',
     'projectImage1':'MTA1.png',
@@ -103,7 +103,7 @@ var skillsImages =
 
   var projViewLeft = function(num){
     $divLeft = $('<div></div>');
-    $divLeft.addClass('projectLeft');
+    $divLeft.addClass('projectLeft back');
 
     $divDetails = $('<div></div>');
     $divDetails.addClass('projectDetails');
@@ -122,24 +122,26 @@ var skillsImages =
     $divControls = $('<div></div>');
     $divControls.addClass('projectControls');
     $aCode = $('<a />');
+    $aCode.addClass('github_link');
     $aCode.attr('target','_blank');
-    $aCode.val('Code');
     $aDemo = $('<a />');
-    $aDemo.val('Demo');
+    $aDemo.addClass('heroku_link');
     $aDemo.attr('target','_blank');
     $divControls.append($aCode).append($aDemo);
 
     $divCredentials = $('<div></div>');
-    $divCredentials.addClass('projectCredentials');
+    $pCredentials = $('<p></p>');
+    $pCredentials.addClass('projectCredentials');
+    $divCredentials.append($pCredentials);
 
     $divLeft.append($divDetails).append($divStack).append($divControls).append($divCredentials);
-    // console.log($divLeft);
+    // console.log($aCode,$aDemo);
     return $divLeft;
 
   };
   var projViewRight = function(typeDisplay){
     $divRight = $('<div></div>');
-    $divRight.addClass('projectRight projectUI');
+    $divRight.addClass('projectRight projectUI front');
     $imgProj = $('<img/>');
     $imgProj.addClass(typeDisplay+'Display');
 
@@ -151,44 +153,51 @@ var skillsImages =
   var projectViews = function($el,num,typeDisplay){
     $divNum = $('<div></div>');
     $divNum.addClass('project'+num);
+    $divNum.addClass('flip-container');
+    $divNum.attr('ontouchstart',"this.classList.toggle('hover')");
+    console.log(projectDetails[num-1]['projectTitle']);
+    $divTitle = $('<div></div>');
+    $divTitle.addClass('projectTitle');
+    $divTitle.html(projectDetails[num-1]['projectTitle']);
+    $divNum.append($divTitle);
+    $divFlipper = $('<div></div>');
+    $divFlipper.addClass('flipper');
 
     $left = projViewLeft(num);
     $right = projViewRight(typeDisplay);
+    $divFlipper.append($right).append($left);
 
-    if ((num === 1) || (num === 2)){
-      $divNum.append($left).append($right);
-      $el.append($divNum);
-    }else if ((num === 3) || (num === 4)){
-      $divNum.append($right).append($left);
-      $el.append($divNum);
-    }else if ((num === 5) || (num === 6)){
-      $divNum.append($left).append($right);
-      $el.append($divNum);
-    }
+    $divNum.append($divFlipper);
+    $el.append($divNum);
   };
   var displayProjectDetails = function(num){
     var details = projectDetails[num];
-    // console.log(num,$('.project'+(num+1)+' .projectTitle').html(),details['projectTitle']);
-    // debugger;
 
-    $currentProjectTitle = $('.project'+(num+1)+' .projectTitle');
-    // console.log('title', $('.project'+(num+1)+' .projectTitle').text());
-    $currentProjectTitle.text(details['projectTitle']);
+    // $currentProjectTitle = $('.project'+(num+1)+' .projectTitle');
+    // $currentProjectTitle.text(details['projectTitle']);
 
     $currentProjectLinkCode = $('.project'+(num+1)+' .projectControls :first-child');
     $currentProjectLinkCode.attr('href',details['projectLinkCode']);
-    $currentProjectLinkCode.html('Code');
+    // $currentProjectLinkCode.html('Code');
 
     $currentProjectLinkDemo = $('.project'+(num+1)+' .projectControls :last-child');
     $currentProjectLinkDemo.attr('href',details['projectLinkDemo']);
-    $currentProjectLinkDemo.html('Demo');
+    // $currentProjectLinkDemo.html('Demo');
 
     $currentProjectDescription = $('.project'+(num+1)+' .projectDescription');
     $currentProjectDescription.text(details['projectDescription']);
-
+    // $ulStack = $('<ul></ul>');
+    // $ulStack.addClass('projStack')
     $currentProjectStack = $('.project'+(num+1)+' .projectStack');
+    // var stack = details['projectStack'].split(',');
+    // _(stack).each(function(n){
+    //   $liStack = $('<li></li>');
+    //   $liStack.html(n);
+    //   $ulStack.append($liStack);
+    // });
+    // console.log($ulStack);
+    // $currentProjectStack.append($ulStack);
     $currentProjectStack.text(details['projectStack']);
-
     $currentProjectCredentials = $('.project'+(num+1)+' .projectCredentials');
     $currentProjectCredentials.text(details['projectCredentials']);
 
@@ -199,6 +208,9 @@ var skillsImages =
   //aboutme section
   var $divAboutMeContainer = $('<div></div>');
   $divAboutMeContainer.addClass('aboutme_container');
+  var $divAboutMeSection = $('<div></div>');
+  $divAboutMeSection.addClass('aboutme_section');
+  $divAboutMeContainer.append($divAboutMeSection);
   var aboutmeImageSrc = "images/Me.png";
   var $divImg = $('<div></div>');
   $divImg.addClass('imageBox');
@@ -275,7 +287,8 @@ var skillsImages =
     $divLearningSkills.append(displaySkills(i));
   });
   $pFour.append($divLearningSkills);
-  $divAboutMeContainer.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($pSchSkills).append($pVCSkills).append($pFour);
+  $divAboutMeSection.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($pSchSkills).append($pVCSkills).append($pFour);
+  $divAboutMeContainer.append($divAboutMeSection);
 
 
 

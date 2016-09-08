@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 body, html,.container{
   height: 100%;
   margin: 0;
@@ -27,6 +27,9 @@ body, html,.container{
   right:2%;
   color: #fff;
 }
+.aboutme_container{
+  text-align:center;
+}
 nav{
   text-align:center;
   font-size: 20px;
@@ -37,7 +40,7 @@ nav ul {
 }
 nav li{
   display:inline-block;
-  border-left:2px solid #fff;
+  /*border-left:2px solid #fff;*/
   font-weight: bold;
   padding: 5px 10px;
 }
@@ -45,7 +48,7 @@ nav li{
   text-shadow: #656565 0 4px 10px;
 }
 nav li:last-child{
-  border-right:2px solid #fff;
+  /*border-right:2px solid #fff;*/
 }
 nav a {
   color:#fff;
@@ -85,7 +88,7 @@ h3{
   /*width:50%;*/
 }
 .home{
-  /*background-image: url(../images/background1.jpg);*/
+  background-image: url(http://c8.alamy.com/comp/F0DBY6/wooden-working-table-with-laptop-cup-of-hot-coffee-mouse-and-pot-plant-F0DBY6.jpg);
   min-height: 100%;
 }
 .projects_container{
@@ -93,14 +96,14 @@ h3{
   /*min-height: 100%;*/
 }
 .contactme {
-  background-image: url(../images/background2.jpeg);
-  min-height: 100%;
+  background-image: url(http://landscapewriter.com/wp-content/uploads/1068-ComputerCoffee.jpg);
   text-align: center;
   width:100%;
   background-size: cover;
+  padding-top:4%;
 }
 .works{
-  background-image: url(../images/background3.jpg);
+  background-image: url(https://wallpaperscraft.com/image/pen_coffee_notebook_writing_84984_1366x768.jpg);
   text-align: center;
   background-size: cover;
   min-height: 100%;
@@ -109,10 +112,6 @@ h3{
 }
 .movingfeather  {
   text-align: center;
-}
-.contact{
-  display: inline-block;
-  margin-top: 10%;
 }
 .contact p{
   text-align: center;
@@ -151,11 +150,17 @@ h3{
   padding-top:10%;
   opacity:1;
 }
+.aboutme_section{
+  width: 550px;
+  height:720px;
+  margin: 0 auto;
+}
 .project1,.project2,.project3,.project4,.project5,.project6{
   /*min-height: 60vh;*/
   display:inline-block;
   /*width: 350px;
   height:350px;*/
+  margin:10%;
 }
 section{
   text-align:center;
@@ -205,6 +210,7 @@ h3 {
   font-size:25px;
   color: #f7f7f7;
 }
+
 .def{
   color:#ddd;
   background-color:#282E34;
@@ -225,33 +231,49 @@ h3 {
   padding:50px 80px;
   text-align: justify;
 }
-.projectLeft , .projectRight {
+/*.projectLeft , .projectRight {
   display: inline-block;
-}
+}*/
 .projects_container{
-  padding:10%;
+  padding:5%;
+  padding-top:2%;
 }
-.projectLeft {
+.controlToTop{
+  text-align:center;
+  font-size: 50px;
+}
+/*.projectLeft {
   width:60%;
 }
 .projectRight{
   width:35%;
+}*/
+.sendButton{
+  border: 2px solid #d18a03;
+  border-radius: 1em;
+  width: 25%;
+  font-size: #6c2102;
+  color: #6c2102;
 }
 div.projectRight > img.laptopDisplay {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 div.projectRight > img.mobileDisplay {
-  height: 100%;
-  width: 90%;
+  height: 120%;
+  width: 80%;
+}
+div.projectRight > img.tabletDisplay {
+  height: 80%;
+  width: 100%;
 }
 .projectControls > a{
   margin-left: 5px;
   margin-top: 0px;
   display:inline-block;
   color:#fff;
-  border:1px solid #ecdfea;
-  background:#656565;
+  border:1px solid #656565;
+  background:#fff;
   box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
   cursor:pointer;
   vertical-align:middle;
@@ -267,7 +289,7 @@ fieldset{
   border: none;
 }
 input,textarea{
-  width:150%;
+  width:100%;
   padding: 0.5em;
   font-size: 20px;
 }
@@ -275,16 +297,19 @@ button{
   padding: 1em;
   margin-left: 10px;
 }
-.contact form{
-  width:100%;
-  margin: auto;
+.formSection{
+  width:50%;
+  margin:0 auto;
 }
 .contact fieldset{
   text-align: center;
 }
-form{
-  width:150%;
+.contact {
+  text-align: center;
 }
+/*form{
+  width:150%;
+}*/
 .imgSkills{
   width: 50px;
   height:50px;
@@ -306,16 +331,18 @@ form{
 
 
 
+
+
+
 .flip-container {
 	perspective: 1000px;
 }
 	/* flip the pane when hovered */
-	/*.flip-container:hover .flipper, .flip-container.hover .flipper, .project1:hover,.aboutmeImage:hover {
+	.flip-container:hover .flipper, .flip-container.hover .flipper,.aboutmeImage:hover {
 		transform: rotateY(180deg);
-	}*/
+	}
 
 .flip-container, .front, .back {
-	/*width: 100%;*/
   width:325px;
 	height: 325px;
 }
@@ -332,9 +359,9 @@ form{
 .front, .back {
 	backface-visibility: hidden;
 
-	/*position: absolute;
+	position: absolute;
 	top: 0;
-	left: 0;*/
+	left: 0;
 }
 
 /* front pane, placed above back */
@@ -350,24 +377,22 @@ form{
   /*padding-top: 50px;*/
 }
 
-.back p {
+.back div {
   color: rgba(115, 130, 144, 1);
-  font-size: 20px;
+  font-size: 15px;
 }
 .back a{
   color: rgba(115, 130, 144, 1);
 }
-.back li{
-  color: color: rgba(115, 130, 144, 1);
+.back p{
+  color: color: rgba(0, 0, 0, 1);
   font-size: 16px;
   text-align: left;
 }
-.palate{
-  background-image: url("https://static.pexels.com/photos/3329/food-kitchen-cutting-board-cooking.jpg");
-  background-size: cover;
+.back li{
+  display: inline-block;
+  font-size: 16px;
 }
-
-.trace{
-  background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/09/10/2D39AA9500000578-0-image-a-3_1444382448583.jpg");
-  background-size: cover;
+.topSection{
+  font-size: 14px;
 }
