@@ -45,7 +45,7 @@ var creativeWorks = [
 var projectDetails = [
   {'projectTitle':'TicTacToe',
     'projectLinkCode':'https://github.com/TriptiWani/project0',
-    'projectLinkDemo':'https://triptiwani.github.io/Games/TicTacToe/tictactoe.html',
+    'projectLinkDemo':'https://triptiwani.github.io/project0/tictactoe.html',
     'projectDescription':'TicTacToe with a mood flavor- either choose your avtars based on your mood or the default colors will be selected. Two modes: - Player(Human) v/s Computer , and Player 1 (Human) v/s Player 2 (Human)',
     'projectStack':'HTML,CSS,Javascript,jQuery',
     'projectCredentials':'',
@@ -96,8 +96,8 @@ var projectDetails = [
 
 //skillsImages
 var skillsImages =
-  {'image':['ajax.png','backbone.svg','bootstrap.svg','css3.svg','heroku.svg','html5.svg','jquery_logo.svg','js.svg','postgresql.svg','ror.svg','ruby.svg','underscore.png'],
-    'skill':['AJAX','BACKBONE','BOOTSTRAP','CSS3','HEROKU','HTML55','jQuery','JavaScript','POSTGRESQL','RubyOnRails','RUBY','UNDERSCORE'],
+  {'image':['ajax.png','backbone.svg','bootstrap.svg','css3.svg','heroku.svg','html5.svg','jquery_logo.svg','js.svg','postgresql.svg','ror.svg','ruby.svg','underscore.png','rspec.png','cucumber.png'],
+    'skill':['AJAX','BACKBONE','BOOTSTRAP','CSS3','HEROKU','HTML55','jQuery','JavaScript','POSTGRESQL','RubyOnRails','RUBY','UNDERSCORE','RSPEC','CUCUMBER'],
     'callout':['AJAX','BACKBONE','BOOTSTRAP','CSS3','HEROKU','HTML55','jQuery','JavaScript','POSTGRESQL','RubyOnRails','RUBY','UNDERSCORE'],
   'learning':['react.svg','nodejs.svg']};
 
@@ -224,7 +224,7 @@ var skillsImages =
   $pOne = $('<p></p>');
   $pOne.html(aboutmeText1);
 
-  var aboutmeText2 = "Focused and self-motivated professional, with an experience of 7 years in Information Technology, I love to solve problems with code while applying industry best practices in a collaborative environment. I am a happy-go-lucky person who likes coding day-in day-out, to the point where I even code in my dreams!  I am passionate about creating interactive, responsive and user-friendly websites and applications";
+  var aboutmeText2 = "Focused and self-motivated professional, with 7 years of experience in Information Technology, I love to solve problems with code while applying industry best practices in a collaborative environment. I am a happy-go-lucky person who likes coding day-in day-out, to the point where I even code in my dreams!  I am passionate about creating interactive, responsive and user-friendly websites and applications";
   $pTwo = $('<p></p>');
   $pTwo.html(aboutmeText2);
 
@@ -278,7 +278,8 @@ var skillsImages =
 
 
   var aboutmeText4 = "Currently Learning: ";
-
+  $divExtras = $('<div></div>');
+  $divExtras.addClass('stackExtras');
   $pFour = $('<p></p>');
   $pFour.html(aboutmeText4);
 
@@ -287,9 +288,10 @@ var skillsImages =
     $divLearningSkills.append(displaySkills(i));
   });
   $pFour.append($divLearningSkills);
-  $divAboutMeSection.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($pSchSkills).append($pVCSkills).append($pFour);
+  $divExtras.append($pSchSkills).append($pVCSkills).append($pFour);
+  $divAboutMeSection.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($divExtras);
+  // $divAboutMeSection.append($pOne).append($pTwo).append($pThree).append($pFive).append($pSkills).append($pSchSkills).append($pVCSkills).append($pFour);
   $divAboutMeContainer.append($divAboutMeSection);
-
 
 
   var returnMessage = function(message,id) {

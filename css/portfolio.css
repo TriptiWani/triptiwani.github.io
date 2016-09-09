@@ -28,7 +28,7 @@ body, html,.container{
   color: #fff;
 }
 .aboutme_container{
-  text-align:center;
+  text-align:justify;
 }
 nav{
   text-align:center;
@@ -44,6 +44,7 @@ nav li{
   font-weight: bold;
   padding: 5px 10px;
 }
+
 #aboutme h3{
   text-shadow: #656565 0 4px 10px;
 }
@@ -140,13 +141,14 @@ h3{
 .caption {
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 60px;
   margin-bottom:10%;
   width: 100%;
   text-align: center;
   color: #000;
+  z-index:1000000;
 }
-#output{
+#output_threejs{
   padding-top:10%;
   opacity:1;
 }
@@ -168,7 +170,7 @@ section{
 .caption span.border {
   background-color: #111;
   color: #fff;
-  padding: 18px;
+  padding: 5px;
   font-size: 25px;
   letter-spacing: 10px;
 }
@@ -264,7 +266,7 @@ div.projectRight > img.laptopDisplay {
 }
 div.projectRight > img.mobileDisplay {
   height: 120%;
-  width: 80%;
+  width: 100%;
 }
 div.projectRight > img.tabletDisplay {
   height: 80%;
@@ -293,7 +295,6 @@ fieldset{
 }
 input,textarea{
   width:100%;
-  padding: 0.5em;
   font-size: 20px;
 }
 button{
@@ -306,6 +307,7 @@ button{
 }
 .contact fieldset{
   text-align: center;
+  margin:10px;
 }
 .contact {
   text-align: center;
@@ -398,4 +400,13 @@ button{
 }
 .topSection{
   font-size: 14px;
+}
+canvas{
+  width: 1400px;
+/*position: absolute;*/
+top: 0;
+height: 365px;
+}
+blockquote{
+  border:0px;
 }

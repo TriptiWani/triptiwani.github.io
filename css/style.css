@@ -1,0 +1,85 @@
+@media (min-width: 320px) {
+  html{
+    width: 95vw !important;
+  }
+  body{
+    width:93vw !important;
+  }
+  div.wrapper{
+    width:93vw !important;
+    padding:5px;
+  }
+  .header{
+    padding:0px !important;
+    text-align:center;
+    width:92vw !important;
+  }
+  nav{
+    width:95vw !important;
+  }
+  ul{
+    width:95vw !important;
+    padding:0px;
+    text-align:justify;
+  }
+  nav li{
+    display:inline;
+    font-weight: none;
+    font-size:12px;
+    padding: 0px;
+  }
+  canvas{
+    width:90vw !important;
+  }
+  .aboutme{
+    padding:1px !important;
+    margin:0px !important;
+    width:92vw;
+  }
+  .aboutme_container{
+    width:92vw;
+  }
+  .aboutme_section{
+    width:92vw !important;
+    /*padding:5px;*/
+    height:auto !important;
+  }
+  .aboutme_section > p{
+    width:82vw;
+    margin:0px !important;
+    padding:0px !important;
+    height:auto;
+  }
+  .project_container > div {
+    width:92vw !important;
+    padding:2px !important;
+  }
+  .project_container > div > div{
+    width:75vw !important;
+  }
+  .projectRight,.flip-container{
+    width:75vw !important;
+  }
+  .projectDescription{
+    width:72vw !important;
+  }
+  .projectleft{
+    width:75vw !important;
+  }
+  .projectRight > img{
+    width:75vw !important;
+  }
+  .projectDetails, .projectLeft > div{
+    width: 85vw;
+    margin-left: 25px;
+  }
+  .projectStack{
+    width:75vw !important;
+  }
+  .work > section > img{
+    width:75vw !important;
+  }
+  .sendButton{
+    padding:0;
+  }
+}

@@ -158,7 +158,7 @@ app.init = function(){
   app.controls = new THREE.OrbitControls( app.camera, app.renderer.domElement);
   app.controls.enabled = false;
 
-  document.getElementById("output").appendChild(app.renderer.domElement);
+  document.getElementById("output_threejs").appendChild(app.renderer.domElement);
 
   // app.renderer.render( app.scene, app.camera); //show the scene using this camera
   app.animate();

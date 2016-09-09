@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/portfolio.css">
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <script src="js/three.js"></script>
   <script src="js/orbitControls.js"></script>
   <script src="js/datGui.js"></script>
@@ -21,40 +21,41 @@
   <script src="js/portfolio.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#aboutme">About Me</a>
-          </li>
-          <li>
-            <a target="_blank" href="Tripti_Wani.pdf">Resume</a>
-          </li>
-          <li>
-            <a class="projectsView" href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contactme">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <div class="wrapper">
+    <!-- <div class="navbar-header"> -->
+      <header class="header" >
+        <!-- col-xs-12 navbar-toggle collapsed" data-toggle="collapse"> -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+              <a target="_blank" href="Tripti_Wani.pdf">Resume</a>
+            </li>
+            <li>
+              <a class="projectsView" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contactme">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <!-- </div> -->
     <div class="home" id="home">
 
       <div id="stats">
 
       </div>
-      <div id="output">
+      <div id="output_threejs">
         <div class="caption">
           <span class="border">TRIPTI WANI</span>
           <p class="job_description">FULL STACK DEVELOPER</p>
         </div>
-
-
       </div>
     </div>
 
