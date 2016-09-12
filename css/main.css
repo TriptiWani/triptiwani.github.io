@@ -7,10 +7,10 @@ body, html, .container {
     max-width: 100vw;
 }
 .header {
-    /*position: fixed;
+    position: fixed;
     right: 0;
     top: 0;
-    left: 0;*/
+    left: 0;
     background-color: #656565;
     z-index: 10;
     text-align: left;
@@ -109,15 +109,19 @@ h3 {
     width: 100%;
     background-size: cover;
     padding-top: 4%;
+    opacity: 0.8;
 }
 .works {
-    /*background-image: url(https://wallpaperscraft.com/image/pen_coffee_notebook_writing_84984_1366x768.jpg);*/
     background-image: url(http://www.ukwallpaper.co.uk/imgs/products/large/634-07-large.jpg);
     text-align: center;
     background-size: cover;
     min-height: 100%;
     padding-top: 10%;
     /*padding-bottom: 5%;*/
+}
+a:hover{
+  color:white;
+  font-style: italic;
 }
 .movingfeather {
     text-align: center;
@@ -177,9 +181,13 @@ section {
 .caption span.border {
     background-color: #111;
     color: #fff;
-    padding: 5px;
+    padding: 35px;
     font-size: 25px;
     letter-spacing: 10px;
+    padding-top: 10px;
+}
+.job_description{
+  color:white;
 }
 .interests {
     height: 100%;
@@ -271,16 +279,24 @@ h3 {
     color: #6c2102;
 }
 div.projectRight>img.laptopDisplay {
-    height: 100%;
-    width: 100%;
+    /*height: 100%;
+    width: 100%;*/
+    max-height: 100%;
+    max-width: 100%;
+    width: 295px;
+    height: 265px;
 }
 div.projectRight>img.mobileDisplay {
     height: 120%;
     width: 100%;
 }
 div.projectRight>img.tabletDisplay {
-    height: 80%;
-    width: 100%;
+    /*height: 80%;
+    width: 100%;*/
+    max-height: 80%;
+    max-width: 100%;
+    width: 295px;
+    height: 265px;
 }
 .projectControls>a {
     margin-left: 5px;
@@ -339,8 +355,12 @@ button {
     font-variant: small-caps;
     font-size: 20px;
 }
+.reachableAt{
+  background-color: rgba(101, 101, 101, 0.35);
+}
 .reachableAt>span {
     margin-left: 10px;
+    color:black;
 }
 .emailIcon {
     width: 5%;
