@@ -39,7 +39,6 @@ ul{
   display: inline;
 }
 nav {
-    text-align: left;
     font-size: 20px;
 }
 nav ul {
@@ -328,8 +327,13 @@ button {
     margin-left: 10px;
 }
 .formSection {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 1em;
+  color: #0e0e0e;
+  background-color: rgb(165, 159, 153);
+  padding:5px;
 }
 .contact fieldset {
     text-align: center;
@@ -485,6 +489,15 @@ blockquote {
     .projectRight > img{
       width:75% ;
     }
+    .workImage {
+        height: 250px;
+        width: 250px;
+        border-radius: 1em;
+        margin-top: 5em;
+    }
+    .formSection{
+      margin-top: 5em;;
+    }
 }
 @media screen and (min-width: 768px) {
     nav {
@@ -494,6 +507,12 @@ blockquote {
     .flip-container {
         display: block;
         margin: 80px auto;
+    }
+    .workImage {
+        height: 350px;
+        width: 350px;
+        border-radius: 1em;
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 992px) {
@@ -521,4 +540,70 @@ blockquote {
     .project1, .project2, .project3, .project4, .project5, .project6 {
         margin: 100px;
     }
+}
+nav > ul{
+  display: inline-block;
+}
+ul.header_icons{
+  text-align: left;
+}
+ul.header_list{
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+
+/*NEWWWW */
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }

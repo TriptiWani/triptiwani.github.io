@@ -55,7 +55,7 @@ var projectDetails = [
   {'projectTitle':'Inventory Management',
     'projectLinkCode':'https://github.com/TriptiWani/project1',
     'projectLinkDemo':'https://store-inventory-management.herokuapp.com',
-    'projectDescription':'This is an e-commerce website to procure, track and deal in Mobile handsets and accessories for wholesalers and retailers across multiple locations with the built-in payment feature',
+    'projectDescription':'This is an e-commerce website to procure, track and deal in Mobile handsets and accessories for wholesalers and retailers across multiple currencies with the built-in payment feature',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Rails, Cloudinary, SendGrid, Heroku, Stripe,Money-rails',
     'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'IM1.png',
@@ -64,7 +64,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/pkganti/project2',
     'projectLinkDemo':'https://wdi15project2.herokuapp.com',
     'projectDescription':'A mobile-first application for creating, bookmarking and sharing recipes- either via self or any existing recipe websites via chrome extension. This application fully supports 4 websites - Taste.com,BBCfood, Allrecipes,Foodnetwork and partially supports all the websites.',
-    'projectStack':'Ruby, Rails 4.2.6, jQuery, CSS, HTML 5, Javascript, Nokogiri, Chrome dev tools extension for bookmarking, Heroku, Cloudinary, Disqus, RESTful APIs, Swipe Library',
+    'projectStack':'Ruby, Rails 4.2.6, jQuery, CSS, HTML 5, Javascript, Nokogiri, Chrome dev tools extension, Ratyrate, Cloudinary, Disqus, RESTful APIs, Swipe Library',
     'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'Palate1.png',
     'projectImage2':'Palate2.png'},
@@ -72,7 +72,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/TriptiWani/Talk2Me',
     'projectLinkDemo':'https://talk2meapp.herokuapp.com/',
     'projectDescription':'User friendly web-based chat application where in a user can share text, photos, gifs and location with the other contacts in the group.This application also comes with a Mobile-first approach.',
-    'projectStack':'HTML, JavaScript, CSS, jQuery, Ruby 2.2.4, Rails 5, Cloudinary, BootStrap, Heroku, Gifshot.js, GoogleMaps,jQueryAutoComplete.js',
+    'projectStack':'HTML, JavaScript, CSS, jQuery, Ruby 2.2.4, Rails 5, Cloudinary, BootStrap, Gifshot.js, GoogleMaps,jQueryAutoComplete.js',
     'projectCredentials':'Tripti/chicken',
     'projectImage1':'Talk2Me1.png',
     'projectImage2':'Talk2Me2.png'},
@@ -96,9 +96,9 @@ var projectDetails = [
 
 //skillsImages
 var skillsImages =
-  {'image':['ajax.png','backbone.svg','bootstrap.svg','css3.svg','heroku.svg','html5.svg','jquery_logo.svg','js.svg','postgresql.svg','ror.svg','ruby.svg','underscore.png','rspec.png','cucumber.png'],
-    'skill':['AJAX','BACKBONE','BOOTSTRAP','CSS3','HEROKU','HTML55','jQuery','JavaScript','POSTGRESQL','RubyOnRails','RUBY','UNDERSCORE','RSPEC','CUCUMBER'],
-    'callout':['AJAX','BACKBONE','BOOTSTRAP','CSS3','HEROKU','HTML55','jQuery','JavaScript','POSTGRESQL','RubyOnRails','RUBY','UNDERSCORE'],
+  {'image':['ajax.png','backbone.svg','bootstrap.svg','css3.svg','heroku.svg','html5.svg','jquery_logo.svg','js.svg','postgresql.svg','ror.svg','ruby.svg','underscore.png','rspec.png','cucumber.png','chromeDeveloper.png'],
+    'skill':['AJAX','BACKBONE','BOOTSTRAP','CSS3','HEROKU','HTML55','jQuery','JavaScript','POSTGRESQL','RubyOnRails','RUBY','UNDERSCORE','RSPEC','CUCUMBER','ChromeDeveloper'],
+    'callout':['AJAX','BACKBONE','BOOTSTRAP','CSS3','HEROKU','HTML55','jQuery','JavaScript','POSTGRESQL','RubyOnRails','RUBY','UNDERSCORE','ChromeDeveloper'],
   'learning':['react.svg','nodejs.svg']};
 
   var projViewLeft = function(num){
@@ -155,7 +155,7 @@ var skillsImages =
     $divNum.addClass('project'+num);
     $divNum.addClass('flip-container');
     $divNum.attr('ontouchstart',"this.classList.toggle('hover')");
-    console.log(projectDetails[num-1]['projectTitle']);
+    // console.log(projectDetails[num-1]['projectTitle']);
     $divTitle = $('<div></div>');
     $divTitle.addClass('projectTitle');
     $divTitle.html(projectDetails[num-1]['projectTitle']);
@@ -256,6 +256,13 @@ var skillsImages =
     $imgSkill = $('<img />');
     $imgSkill.attr('src','images/'+skill);
     $imgSkill.addClass('imgSkills');
+    // $imgSkill.attr('onclick',"myFunction()");
+    // $span = $('<span></span>');
+    // // <span class="" id="myPopup">Popup text...</span>
+    // $span.addClass('popuptext');
+    // $span.attr('id','myPopup');
+    // $span.text('Popping up');
+    // $imgSkill.append($span);
 
     if(skill === 'underscore.png'){
       $imgSkill.addClass('imgSkills underscoreSkill');
