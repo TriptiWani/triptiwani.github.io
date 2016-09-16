@@ -47,6 +47,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/TriptiWani/project0',
     'projectLinkDemo':'https://triptiwani.github.io/project0/tictactoe.html',
     'projectDescription':'TicTacToe with a mood flavor- either choose your avtars based on your mood or the default colors will be selected. Two modes: - Player(Human) v/s Computer , and Player 1 (Human) v/s Player 2 (Human)',
+    'projectCaseStudy':'',
     'projectStack':'HTML,CSS,Javascript,jQuery',
     'projectCredentials':'',
     'projectImage1':'ttt1.png',
@@ -56,7 +57,8 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/TriptiWani/project1',
     'projectLinkDemo':'https://store-inventory-management.herokuapp.com',
     'projectDescription':'This is an e-commerce website to procure, track and deal in Mobile handsets and accessories for wholesalers and retailers across multiple currencies with the built-in payment feature',
-    'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Rails, Cloudinary, SendGrid, Heroku, Stripe,Money-rails',
+    'projectCaseStudy':'',
+    'projectStack':'HTML/CSS/Javascript/jQuery,Ruby/Rails 4.2.6, Cloudinary/SendGrid/Heroku, Stripe,Money-rails',
     'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'IM1.png',
     'projectImage2':'IM2.png'},
@@ -73,6 +75,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/TriptiWani/Talk2Me',
     'projectLinkDemo':'https://talk2meapp.herokuapp.com/',
     'projectDescription':'User friendly web-based chat application where in a user can share text, photos, gifs and location with the other contacts in the group.This application also comes with a Mobile-first approach.',
+    'projectCaseStudy':'',
     'projectStack':'HTML, JavaScript, CSS, jQuery, Ruby 2.2.4, Rails 5, Cloudinary, BootStrap, Gifshot.js, GoogleMaps,jQueryAutoComplete.js',
     'projectCredentials':'Tripti/chicken',
     'projectImage1':'Talk2Me1.png',
@@ -81,6 +84,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/TriptiWani/HangMan',
     'projectLinkDemo':'https://triptiwani.github.io/HangMan/index.html',
     'projectDescription':'This is >-O !!HANGMAN!! O-< . You have 8 lives to guess the word, else you loose. It keeps a track of all the letters gueesed, so that you dont guess the same letter again.' ,
+    'projectCaseStudy':'',
     'projectStack':'HTML,CSS,Javascript,jQuery,Underscore.js',
     'projectCredentials':'',
     'projectImage1':'HangMan1.png',
@@ -89,6 +93,7 @@ var projectDetails = [
     'projectLinkCode':'https://github.com/TriptiWani/MTA',
     'projectLinkDemo':'https://triptiwani.github.io/MTA/MTA3/index.html',
     'projectDescription':'This models a simple subway system.It takes the line and stop that a user is getting on at and  getting off at and prints the journey and the total number of stops for the trip. Enjoy this in all the flavors of code - Javascript, Ruby, Underscore',
+    'projectCaseStudy':'',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Underscore.js',
     'projectCredentials':'',
     'projectImage1':'MTA1.png',
@@ -114,7 +119,6 @@ var skillsImages =
     $pDes.addClass('projectDescription');
 
     $a = $('<a></a>');
-    $a.attr('href','https://katmlee.github.io/palate.html');
     $a.addClass('projectCaseStudy');
 
     $divDetails.append($pTitle).append($pDes).append($a);
@@ -191,8 +195,7 @@ var skillsImages =
 
     $currentProjectDescription = $('.project'+(num+1)+' .projectDescription');
     $currentProjectDescription.text(details['projectDescription']);
-    $currentProjectCaseStudy = $('.projectCaseStudy');
-    $currentProjectCaseStudy.text(details['projectCaseStudy']);
+
     // $ulStack = $('<ul></ul>');
     // $ulStack.addClass('projStack')
     $currentProjectStack = $('.project'+(num+1)+' .projectStack');

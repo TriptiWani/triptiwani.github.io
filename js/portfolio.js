@@ -27,6 +27,7 @@ $(document).ready(function(){
     $('.github_link').append('<i class="fa fa-github" aria-hidden="true"></i>');
     $('.heroku_link').append('  <i class="fa fa-laptop" aria-hidden="true"></i>');
 
-
+    $('.project3  .projectCaseStudy').attr('href','https://katmlee.github.io/palate.html');
+    $('.project3  .projectCaseStudy').text('Case Study - Approach to this Project');
 
 });
