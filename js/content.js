@@ -114,7 +114,7 @@ var skillsImages =
     $pDes.addClass('projectDescription');
 
     $a = $('<a></a>');
-    $a.attr('href','');
+    $a.attr('href','https://katmlee.github.io/palate.html');
     $a.addClass('projectCaseStudy');
 
     $divDetails.append($pTitle).append($pDes).append($a);
