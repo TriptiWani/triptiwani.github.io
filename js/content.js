@@ -1,6 +1,5 @@
 var num_of_projects = 6;
 //creative works
-//This application fully supports 4 websites - Taste.com,BBCfood, Allrecipes,Foodnetwork and partially supports all the websites.
 var creativeWorks = [
   {'img':'images/lantern.jpg',
     'description1' : 'Lantern is made out of waste-materials like empty gift boxes, used A4 sheets, coffee stirrer',
@@ -58,15 +57,16 @@ var projectDetails = [
     'projectLinkDemo':'https://store-inventory-management.herokuapp.com',
     'projectDescription':'This is an e-commerce website to procure, track and deal in Mobile handsets and accessories for wholesalers and retailers across multiple currencies with the built-in payment feature',
     'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Rails, Cloudinary, SendGrid, Heroku, Stripe,Money-rails',
-    'projectCredentials':'Credentials: tripti.895@gmail.com/chicken',
+    'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'IM1.png',
     'projectImage2':'IM2.png'},
   {'projectTitle':'Palate',
     'projectLinkCode':'https://github.com/pkganti/project2',
     'projectLinkDemo':'https://wdi15project2.herokuapp.com',
     'projectDescription':'A mobile-first application for creating, bookmarking and sharing recipes- either via self or any existing recipe websites via chrome extension.',
-    'projectStack':'Ruby, Rails 4.2.6, jQuery, CSS, HTML 5, Javascript, Nokogiri, Chrome dev tools extension, Ratyrate, Cloudinary, Disqus, RESTful APIs, Swipe Library',
-    'projectCredentials':'Credentials: tripti.895@gmail.com/chicken',
+    'projectCaseStudy':'Case Study - Our approach to this Project',
+    'projectStack':'HTML/CSS/Javascript/jQuery,Ruby/Rails 4.2.6,  Nokogiri, Chrome dev tools, Ratyrate/Cloudinary/Disqus, RESTful APIs/Swipe Library',
+    'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'Palate1.png',
     'projectImage2':'Palate2.png'},
   {'projectTitle':'Talk2Me',
@@ -74,7 +74,7 @@ var projectDetails = [
     'projectLinkDemo':'https://talk2meapp.herokuapp.com/',
     'projectDescription':'User friendly web-based chat application where in a user can share text, photos, gifs and location with the other contacts in the group.This application also comes with a Mobile-first approach.',
     'projectStack':'HTML, JavaScript, CSS, jQuery, Ruby 2.2.4, Rails 5, Cloudinary, BootStrap, Gifshot.js, GoogleMaps,jQueryAutoComplete.js',
-    'projectCredentials':'Credentials: Tripti/chicken',
+    'projectCredentials':'Tripti/chicken',
     'projectImage1':'Talk2Me1.png',
     'projectImage2':'Talk2Me2.png'},
   {'projectTitle':'HangMan',
@@ -113,7 +113,11 @@ var skillsImages =
     $pDes = $('<p></p>');
     $pDes.addClass('projectDescription');
 
-    $divDetails.append($pTitle).append($pDes);
+    $a = $('<a></a>');
+    $a.attr('href','');
+    $a.addClass('projectCaseStudy');
+
+    $divDetails.append($pTitle).append($pDes).append($a);
 
     $divStack = $('<div></div>');
     $divStack.addClass('projectStack');
@@ -187,6 +191,8 @@ var skillsImages =
 
     $currentProjectDescription = $('.project'+(num+1)+' .projectDescription');
     $currentProjectDescription.text(details['projectDescription']);
+    $currentProjectCaseStudy = $('.projectCaseStudy');
+    $currentProjectCaseStudy.text(details['projectCaseStudy']);
     // $ulStack = $('<ul></ul>');
     // $ulStack.addClass('projStack')
     $currentProjectStack = $('.project'+(num+1)+' .projectStack');
