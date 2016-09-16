@@ -63,8 +63,9 @@ var projectDetails = [
   {'projectTitle':'Palate',
     'projectLinkCode':'https://github.com/pkganti/project2',
     'projectLinkDemo':'https://wdi15project2.herokuapp.com',
-    'projectDescription':'A mobile-first application for creating, bookmarking and sharing recipes- either via self or any existing recipe websites via chrome extension. This application fully supports 4 websites - Taste.com,BBCfood, Allrecipes,Foodnetwork and partially supports all the websites.',
-    'projectStack':'Ruby, Rails 4.2.6, jQuery, CSS, HTML 5, Javascript, Nokogiri, Chrome dev tools extension, Ratyrate, Cloudinary, Disqus, RESTful APIs, Swipe Library',
+    'projectDescription':'A mobile-first application for creating, bookmarking and sharing recipes- either via self or any existing recipe websites via chrome extension.',
+    'projectCaseStudy':'Case Study - Our approach to this Project',
+    'projectStack':'HTML/CSS/Javascript/jQuery,Ruby/Rails 4.2.6,  Nokogiri, Chrome dev tools, Ratyrate/Cloudinary/Disqus, RESTful APIs/Swipe Library',
     'projectCredentials':'tripti.895@gmail.com/chicken',
     'projectImage1':'Palate1.png',
     'projectImage2':'Palate2.png'},
@@ -112,7 +113,11 @@ var skillsImages =
     $pDes = $('<p></p>');
     $pDes.addClass('projectDescription');
 
-    $divDetails.append($pTitle).append($pDes);
+    $a = $('<a></a>');
+    $a.attr('href','');
+    $a.addClass('projectCaseStudy');
+
+    $divDetails.append($pTitle).append($pDes).append($a);
 
     $divStack = $('<div></div>');
     $divStack.addClass('projectStack');
@@ -186,6 +191,8 @@ var skillsImages =
 
     $currentProjectDescription = $('.project'+(num+1)+' .projectDescription');
     $currentProjectDescription.text(details['projectDescription']);
+    $currentProjectCaseStudy = $('.projectCaseStudy');
+    $currentProjectCaseStudy.text(details['projectCaseStudy']);
     // $ulStack = $('<ul></ul>');
     // $ulStack.addClass('projStack')
     $currentProjectStack = $('.project'+(num+1)+' .projectStack');
