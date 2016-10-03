@@ -129,6 +129,7 @@ var skillsImages =
     $pDes.addClass('projectDescription');
 
     $a = $('<a></a>');
+    $a.attr('href','');
     $a.addClass('projectCaseStudy');
 
     $divDetails.append($pTitle).append($pDes).append($a);
@@ -205,7 +206,8 @@ var skillsImages =
 
     $currentProjectDescription = $('.project'+(num+1)+' .projectDescription');
     $currentProjectDescription.text(details['projectDescription']);
-
+    $currentProjectCaseStudy = $('.projectCaseStudy');
+    $currentProjectCaseStudy.text(details['projectCaseStudy']);
     // $ulStack = $('<ul></ul>');
     // $ulStack.addClass('projStack')
     $currentProjectStack = $('.project'+(num+1)+' .projectStack');
