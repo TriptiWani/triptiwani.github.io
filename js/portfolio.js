@@ -29,5 +29,7 @@ $(document).ready(function(){
 
     $('.project3  .projectCaseStudy').attr('href','https://katmlee.github.io/palate.html');
     $('.project3  .projectCaseStudy').text('Case Study - Approach to this Project');
+    $('.project1  .projectCaseStudy').attr('href','http://site-55311-9163-8820.strikingly.com');
+    $('.project1  .projectCaseStudy').text('Case Study - Approach to this Project');
 
 });
