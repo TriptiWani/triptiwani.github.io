@@ -163,7 +163,7 @@ a:hover{
 #output_threejs {
     /*padding-top: 1%;*/
     opacity: 1;
-    padding-bottom: 10%;
+    /*padding-bottom: 10%;*/
 }
 .aboutme_section {
     width: 550px;
@@ -189,7 +189,7 @@ section {
     padding-top: 10px;
 }
 .job_description{
-  color:white;
+  color:#4a1616;
 }
 .interests {
     height: 100%;
@@ -227,7 +227,9 @@ h3 {
 .border {
     background-color: transparent;
     font-size: 25px;
-    color: #f7f7f7;
+    /*color: #f7f7f7;*/
+    color: #4a1616;
+    font-weight: bolder;
 }
 .def {
     color: #ddd;
