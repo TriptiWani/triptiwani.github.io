@@ -1,4 +1,4 @@
-var num_of_projects = 6;
+var num_of_projects = 4;
 //creative works
 var creativeWorks = [
   {'img':'images/lantern.jpg',
@@ -90,24 +90,24 @@ var projectDetails = [
     'projectCredentials':'Tripti/chicken',
     'projectImage1':'Talk2Me1.png',
     'projectImage2':'Talk2Me2.png'},
-  {'projectTitle':'HangMan',
-    'projectLinkCode':'https://github.com/TriptiWani/HangMan',
-    'projectLinkDemo':'https://triptiwani.github.io/HangMan/index.html',
-    'projectDescription':'This is >-O !!HANGMAN!! O-< . You have 8 lives to guess the word, else you loose. It keeps a track of all the letters gueesed, so that you dont guess the same letter again.' ,
-    'projectCaseStudy':'',
-    'projectStack':'HTML,CSS,Javascript,jQuery,Underscore.js',
-    'projectCredentials':'',
-    'projectImage1':'HangMan1.png',
-    'projectImage2':'HangMan2.png'},
-  {'projectTitle':'MTA- The Travel Planner',
-    'projectLinkCode':'https://github.com/TriptiWani/MTA',
-    'projectLinkDemo':'https://triptiwani.github.io/MTA/MTA3/index.html',
-    'projectDescription':'This models a simple subway system.It takes the line and stop that a user is getting on at and  getting off at and prints the journey and the total number of stops for the trip. Enjoy this in all the flavors of code - Javascript, Ruby, Underscore',
-    'projectCaseStudy':'',
-    'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Underscore.js',
-    'projectCredentials':'',
-    'projectImage1':'MTA1.png',
-    'projectImage2':'MTA2.png'},
+  // {'projectTitle':'HangMan',
+  //   'projectLinkCode':'https://github.com/TriptiWani/HangMan',
+  //   'projectLinkDemo':'https://triptiwani.github.io/HangMan/index.html',
+  //   'projectDescription':'This is >-O !!HANGMAN!! O-< . You have 8 lives to guess the word, else you loose. It keeps a track of all the letters gueesed, so that you dont guess the same letter again.' ,
+  //   'projectCaseStudy':'',
+  //   'projectStack':'HTML,CSS,Javascript,jQuery,Underscore.js',
+  //   'projectCredentials':'',
+  //   'projectImage1':'HangMan1.png',
+  //   'projectImage2':'HangMan2.png'},
+  // {'projectTitle':'MTA- The Travel Planner',
+  //   'projectLinkCode':'https://github.com/TriptiWani/MTA',
+  //   'projectLinkDemo':'https://triptiwani.github.io/MTA/MTA3/index.html',
+  //   'projectDescription':'This models a simple subway system.It takes the line and stop that a user is getting on at and  getting off at and prints the journey and the total number of stops for the trip. Enjoy this in all the flavors of code - Javascript, Ruby, Underscore',
+  //   'projectCaseStudy':'',
+  //   'projectStack':'HTML,CSS,Javascript,jQuery,Ruby,Underscore.js',
+  //   'projectCredentials':'',
+  //   'projectImage1':'MTA1.png',
+  //   'projectImage2':'MTA2.png'},
 ];
 
 //skillsImages
@@ -240,11 +240,11 @@ var skillsImages =
 
   $divImg.append($myImage);
 
-  var aboutmeText1 = "Hi There! I am Tripti - a Sydney based Full-Stack Web Developer looking for full-time work";
+  var aboutmeText1 = "Hi There! I am Tripti - a Sydney based Web Developer looking for work";
   $pOne = $('<p></p>');
   $pOne.html(aboutmeText1);
 
-  var aboutmeText2 = "Focused and self-motivated professional, with 7 years of experience in Information Technology, I love to solve problems with code while applying industry best practices in a collaborative environment. I am a happy-go-lucky person who likes coding day-in day-out, to the point where I even code in my dreams!  I am passionate about creating interactive, responsive and user-friendly websites and applications";
+  var aboutmeText2 = "Focused and self-motivated professional, with 7 years of experience in Software Engineering, I love to solve problems with code while applying industry best practices in a collaborative environment. I am a happy-go-lucky person who likes coding day-in day-out, to the point where I even code in my dreams!  I am passionate about creating interactive, responsive and user-friendly websites and applications";
   $pTwo = $('<p></p>');
   $pTwo.html(aboutmeText2);
 
@@ -252,7 +252,7 @@ var skillsImages =
 
 
 
-  var aboutmeText5 = "Apart from this, I have a keen interest in Painting/Crafting. Have a look ";
+  var aboutmeText5 = "Apart from this, I have a keen interest in Painting/Crafting. ";
 
   var VCSkills = "Version Control: GIT,CLEARCASE,VSS";
   var SchSkills = "Scheduler: Control-M";
@@ -263,12 +263,12 @@ var skillsImages =
   $pSchSkills = $('<p></p>');
   $pSchSkills.html(SchSkills);
 
-  var $aCreative = $('<a/>');
-  $aCreative.attr('href','#interests');
-  $aCreative.html('here');
+  // var $aCreative = $('<a/>');
+  // $aCreative.attr('href','#interests');
+  // $aCreative.html('here');
   $pFive = $('<p></p>');
   $pFive.html(aboutmeText5);
-  $pFive.append($aCreative);
+  // $pFive.append($aCreative);
   $pThree = $('<p></p>');
   $pThree.html(aboutmeText3);
 

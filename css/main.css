@@ -88,10 +88,12 @@ h3 {
     background-size: cover;
 }
 .aboutme {
-    color: #777;
+    color: black;
     background-color: white;
     text-align: center;
     padding: 50px 80px;
+    background-size: cover;
+    background-image: url(../images/background3.jpg);
     /*width:50%;*/
 }
 .home {
@@ -161,6 +163,7 @@ a:hover{
 #output_threejs {
     /*padding-top: 1%;*/
     opacity: 1;
+    padding-bottom: 10%;
 }
 .aboutme_section {
     width: 550px;

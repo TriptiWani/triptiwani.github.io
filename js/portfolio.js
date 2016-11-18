@@ -1,7 +1,7 @@
 $(document).ready(function(){
   setInterval(randomCreativeWorks,4000);
   $('.laptopDisplay').on('click',function(){
-    console.log('clicked');
+    // console.log('clicked');
   });
 
   // $('.laptopDisplay').mouseleave(function(){
@@ -18,8 +18,8 @@ $(document).ready(function(){
     projectViews($('.projects_container'),2,'laptop');
     projectViews($('.projects_container'),3,'mobile');
     projectViews($('.projects_container'),4,'mobile');
-    projectViews($('.projects_container'),5,'tablet');
-    projectViews($('.projects_container'),6,'tablet');
+    // projectViews($('.projects_container'),5,'tablet');
+    // projectViews($('.projects_container'),6,'tablet');
     _(num_of_projects).times(function(n){
       displayProjectDetails(n);
     });
